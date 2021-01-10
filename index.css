@@ -1,0 +1,124 @@
+body {
+  background-color: #101131;
+  margin: 3% 3%;
+  height: 100vh;
+}
+
+.weather {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  font-size: 230%;
+  color: #ffffff;
+}
+
+/* .btn {
+  cursor: pointer;
+} */
+
+.js-clock {
+  margin: auto;
+  margin-top: 10%;
+  padding-top: 30px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 900%;
+  text-align: center;
+  /* transition: color 0.5s ease-in-out; */
+}
+
+h4 {
+  font-size: 300%;
+  text-align: center;
+  margin: auto;
+}
+/* .clicked {
+  color: #f16717;
+} */
+
+.form,
+.greetings {
+  display: none;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2%;
+}
+::placeholder {
+  color: #ffffff;
+}
+
+.form input {
+  font-size: 200%;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.toDoForm {
+  text-align: center;
+}
+.toDoForm input {
+  text-align: center;
+  font-size: 200%;
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.showing {
+  display: block;
+}
+
+/* to do 리스트 스타일 */
+ul {
+  list-style: none;
+  width: 400px;
+  padding-left: 1%;
+  padding-top: 50px;
+  margin: auto;
+}
+
+li {
+  margin-bottom: 1%;
+  color: #ffffff;
+  font-size: 200%;
+}
+
+li button {
+  margin-right: 2%;
+  font-size: 100%;
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.bgImg {
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
