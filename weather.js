@@ -13,11 +13,12 @@ function getWeather(lat, lng){
         .then (function(json){
             const place = json.name;
             const temp = json.main.temp;
-            // const weatherDe= json.weather; 배열안에 있어서 어떻게 사용해야 하는지 잘 모르겠음
-            weatherContainer.innerText = `${place}:  ${temp}℃`;
-                // console.log(json); 가져온 날씨 데이터를 확인 할 수 있음.
+            const mainWeather= json.weather[0].main; 
+            weatherContainer.innerText = `${place} | ${mainWeather} | ${temp}℃`;
+                // console.log(json); //가져온 날씨 데이터를 확인 할 수 있음.
         });
 }
+
 
 function saveCoords (coordsObj){
     localStorage.setItem(coords, JSON.stringify(coordsObj));
