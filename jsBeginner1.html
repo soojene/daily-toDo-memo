@@ -16,17 +16,24 @@
 
     <!-- 방문자 인사 -->
     <form class = "js-form form">
-        <input type="text" placeholder="What is your name?" />
+        <input id="greetingInput" class = "jsGreeting" type="text" placeholder="What is your name?" />
     </form>
     <h4 class = "js-greetings greetings"></h4>
 
     <!-- 할 일 정리 -->
-    <form class = "js-toDoForm toDoForm">
-        <input type = "text" placeholder = "Write a to do" />
+    <form class="toDoForm">
+        <input type="text" id="jsTask" class="TaskJS" placeholder="Write a to do">
     </form>
-        <!-- 할 일 리스트 -->
-        <ul class = "js-toDoList">
-        </ul> 
+    <span id="TwoLists">
+        <div id="pendingListCss">
+        <h3>pending</h3>
+        <ul id="taskList"></ul>
+    </div>
+    <div id="finishlistCss" >
+        <h3>finish</h3>
+        <ul id="finishList"></ul>
+    </div>
+    </span>
 
     <script src = "clock.js"></script>
     <script src = "gretting.js"></script>

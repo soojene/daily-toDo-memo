@@ -1,14 +1,19 @@
+:root {
+  --color-font: white;
+  --color-listBackground: rgba(105, 105, 105, 0.507);
+}
+
 body {
-  background-color: #101131;
-  margin: auto;
-  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .bgImg {
   position: absolute;
-  opacity: 0.5;
+  opacity: 1.5;
   top: 0;
   left: 0;
   width: 100%;
@@ -21,103 +26,103 @@ body {
   position: absolute;
   top: 5%;
   right: 4%;
-  font-size: 230%;
-  color: #ffffff;
+  font-size: 200%;
+  color: var(--color-font);
 }
-
-/* .btn {
-  cursor: pointer;
-} */
-
+/* clock */
 .js-clock {
-  margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   padding-top: 30px;
 }
 
 h1 {
-  color: #ffffff;
-  width: 80%;
-  font-size: 150px;
-  margin: auto;
+  color: var(--color-font);
+  font-size: 400%;
+  margin-bottom: 10px;
+}
+/* two inputs */
+input,
+#jsTask {
+  font-size: 200%;
   text-align: center;
-  /* transition: color 0.5s ease-in-out; */
+  background-color: transparent;
+  outline: 0;
+  border-style: none;
+  border-bottom: var(--color-font) solid 0.5px;
+  color: var(--color-font);
+  padding: 0;
 }
 
-h4 {
-  font-size: 300%;
-  text-align: center;
-  margin: auto;
+::placeholder {
+  color: var(--color-font);
+  opacity: 0.8;
 }
-/* .clicked {
-  color: #f16717;
-} */
 
-.form,
-.greetings {
+.form {
   display: none;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 2%;
-}
-::placeholder {
-  color: #ffffff;
-}
-
-.form input {
-  font-size: 200%;
-  text-align: center;
-  background-color: transparent;
-  color: #ffffff;
-  border-color: #ffffff;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-
-.toDoForm {
-  text-align: center;
-}
-.toDoForm input {
-  text-align: center;
-  font-size: 200%;
-  background-color: transparent;
-  color: #ffffff;
-  border-color: #ffffff;
-  border-top: none;
-  border-left: none;
-  border-right: none;
 }
 
 .showing {
   display: block;
 }
 
-/* to do 리스트 스타일 */
+h4 {
+  font-size: 200%;
+  color: var(--color-font);
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+/* two list boards */
+#TwoLists {
+  max-width: 1300px;
+  max-height: 350px;
+  margin-top: 3%;
+  display: flex;
+}
+#pendingListCss {
+  margin-right: 20px;
+  background-color: var(--color-listBackground);
+  overflow-y: scroll;
+}
+
+#finishlistCss {
+  background-color: var(--color-listBackground);
+  overflow-y: scroll;
+}
+
+h3 {
+  font-size: 200%;
+  color: var(--color-font);
+  opacity: 0.38;
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+/* 리스트 스타일 */
 ul {
   list-style: none;
-  width: 400px;
-  padding-left: 1%;
-  padding-top: 50px;
-  margin: auto;
+  padding: 0;
+  margin: 0;
 }
 
 li {
   margin-bottom: 1%;
-  color: #ffffff;
-  font-size: 200%;
+  color: var(--color-font);
+  font-size: 150%;
 }
 
 li button {
   margin-right: 2%;
-  font-size: 100%;
+  font-size: 90%;
   border-style: none;
   outline: none;
   background-color: transparent;
   cursor: pointer;
 }
-
-@keyframes fadeIn {
+*/ @keyframes fadeIn {
   from {
     opacity: 0;
   }
