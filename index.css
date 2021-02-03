@@ -122,7 +122,8 @@ li button {
   background-color: transparent;
   cursor: pointer;
 }
-*/ @keyframes fadeIn {
+
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
